@@ -11,10 +11,15 @@ service PersonService {
 }
 
 message PersonDetailsResponse {
-  int32 age = 1;
-  string state = 2;
+  string id = 1;
+  string name = 2;
+  string email = 3;
+  int32 age = 4;
+  string state = 5;
 }
 
 message PersonDetailsRequest {
-  string name = 1;
+  string id = 1;
+  string name = 2;
+  string email = 3;
 }
